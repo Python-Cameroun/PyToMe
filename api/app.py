@@ -1,29 +1,32 @@
 # <>Python-Hire-Jobs
-# BIGS THANKs TO -> poteto and jessicard on GITHUB;
-# because, i used their "README.md" to fetch data for this project!
 #
-# Author: Sanix-darker
+# Author: [Sanix-darker](https://github.com/sanix-darker)
+#
+# Ressources / WebSites used to fetch data: 
+# https://jobs.github.com/positions?description=python
+# https://pythonjobs.github.io/
+# https://www.python.org/jobs/
+# https://www.indeed.com/q-Python-jobs.html
+# https://www.indeed.com/q-Python-Developer-jobs.html
+# https://remoteok.io/remote-python-jobs
+# https://www.linkedin.com/jobs/python-jobs
+# https://www.linkedin.com/jobs/python-developer-jobs
+# https://www.remotepython.com/
+# https://www.pythonjobs.com/
+# https://www.glassdoor.com/Job/python-developer-jobs-SRCH_KO0,16.htm
+# https://www.naukri.com/python-developer-jobs
+# https://www.upwork.com/o/jobs/browse/skill/python/
+# https://www.seek.co.nz/python-jobs
+# https://www.nijobs.com/Python-Jobs-in-Belfast
+# https://www.irishjobs.ie/Python-Developer-Jobs-in-Dublin
+# https://stackoverflow.com/jobs/developer-jobs-using-python
+# https://www.technojobs.co.uk/python-jobs
+# https://www.pythonjobshq.com/
 
 import re
 import requests
 
-def get_companies():
-    """Get all companies that don't do whiteboard hiring"""
-    req = requests.get('https://raw.githubusercontent.com/poteto/hiring-without-whiteboards/master/README.md')
-    return [
-        re.search(r'^- \[(.*)\]', _).group(1)
-        for _ in req.text.split('\n')
-        if re.search(r'^- \[(.*)\]', _)
-    ]
 
-def get_companies_for_remote_job():
-    """Get all companies that have remote job opportunities"""
-    req = requests.get('https://raw.githubusercontent.com/jessicard/remote-jobs/master/README.md')
-    regex_search = r'(\[(.*)\]|^(.*) \|.*\|)'
-    return [
-        re.search(regex_search, _).group(2)
-        if re.search(regex_search, _).group(2)
-        else re.search(regex_search, _).group(3)
-        for _ in req.text.split('\n')
-        if re.search(regex_search, _)
-    ]
+def fetch_fromIT(url, schema):
+    result = ""
+    return result
