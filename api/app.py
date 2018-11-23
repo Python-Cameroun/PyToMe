@@ -54,10 +54,10 @@
 # https://www.technojobs.co.uk/python-jobs
 # https://www.pythonjobshq.com/
 
-import re
 import requests
+from bs4 import BeautifulSoup
 
 
 def fetch_fromIT(url, schema):
-    result = ""
-    return result
+    soup = BeautifulSoup('\n'.join(requests.get(url).text.splitlines()[1:10]), 'html.parser')
+    return [i.get('href') for i in soup.find_all(schema)]
