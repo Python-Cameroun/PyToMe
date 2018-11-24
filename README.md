@@ -23,6 +23,10 @@ PyToMe have a list of website where it wil fetch data(jobs/projects) and will no
     # Launch it
     cd api/ && python app.py
 ```
+## Dependencies
+* requests
+* BeautifulSoup
+* schedule
 
 ## TODO
 - [ In progress... ] The Python Job (Collecting/Fetching jobs all over website with frequency.)
