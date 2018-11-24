@@ -77,8 +77,11 @@ def fetch_fromIT(url, schema, total):
     soup = BeautifulSoup(data, 'html.parser')
     result = ""
     for link in soup.find_all(schema.split(',')[0]):
-        result += link.get(schema.split(',')[1])
-        print(link.get(schema.split(',')[1]))
+        try:
+            result += link.get(schema.split(',')[1])
+            print(link.get(schema.split(',')[1]))
+        except:
+            print "Error on coercing to Unicode: need string or buffer, NoneType found"
     return result
 
 def getWebSite_and_schema_and_save_data():
