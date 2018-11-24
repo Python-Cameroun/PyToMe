@@ -107,10 +107,10 @@ def PYTOME_job():
 # schedule.every(10).minutes.do(job)
 # schedule.every().hour.do(job)
 # Let say, automation every day at 00:01
-#schedule.every().day.at("00:01").do(PYTOME_job)
+schedule.every().day.at("00:01").do(PYTOME_job)
 
 Presentation()
-PYTOME_job()
-# while True:
-#     schedule.run_pending()
-#     time.sleep(1)
+
+while True:
+    schedule.run_pending()
+    time.sleep(1)
