@@ -15,21 +15,19 @@ PyToMe have a list of website where it wil fetch data(jobs/projects) and will no
 ## How to install it locally
 * git clone https://github.com/Python-Cameroun/pytome
 * cd to/the/project/
-* Hit theese commands below.
-```python 
-    # this will install requests and BeautifullSoup
-    cd pat/to/project/api
-    pip install -r requirements.txt
-    # Run it
-    python app.py
-```
+* launch **start_PytoMe.bat** (for windows user) and **start_PytoMe.sh** (for linux user)
+* The script will do the rest!
+
 ## Dependencies
 * requests
 * BeautifulSoup
 * schedule
+* Flask
+* For launch the local server on index.html, this code use http-server (allready install in node_modules/ directory)
 
 ## TODO
-- [ In progress... ] The Python Job (Collecting/Fetching jobs all over website with frequency.)
+- [OK] The Python Job with frequency
+- [ - ] Collecting/Fetching jobs all over website.
 - [ - ] The Mailing system to notify all developpers subscribed on this app.
 - [OK] The Web page where to suscribe to PyToMe.
 - [OK] Saving Mails.
