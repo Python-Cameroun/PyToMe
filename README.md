@@ -18,10 +18,10 @@ PyToMe have a list of website where it wil fetch data(jobs/projects) and will no
 * Hit theese commands below.
 ```python 
     # this will install requests and BeautifullSoup
+    cd pat/to/project/api
     pip install -r requirements.txt
-
-    # Launch it
-    cd api/ && python app.py
+    # Run it
+    python app.py
 ```
 ## Dependencies
 * requests
