@@ -32,6 +32,7 @@ PyToMe have a list of website where it wil fetch data(jobs/projects) and will no
 - [ In progress... ] The Python Job (Collecting/Fetching jobs all over website with frequency.)
 - [ - ] The Mailing system to notify all developpers subscribed on this app.
 - [OK] The Web page where to suscribe to PyToMe.
+- [OK] Saving Mails.
 - [ - ] The Python Config (For personnalize notifications)
     - [ - ] The Type (Remote Jobs, full time, etc...).
     - [ - ] The country / city.
@@ -45,7 +46,7 @@ PyToMe have a list of website where it wil fetch data(jobs/projects) and will no
 [Sanix-darker](https://github.com/sanix-darker)
 
 ## Contributors
-...
+[Adonis Simo](https://github.com/simo97)
 
 ## Organization
 [Python Cameroon](https://github.com/python-cameroun)
