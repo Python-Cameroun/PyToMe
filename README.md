@@ -44,7 +44,7 @@ PyToMe have a list of website where it wil fetch data(jobs/projects) and will no
 [Sanix-darker](https://github.com/sanix-darker)
 
 ## Contributors
-[Adonis Simo](https://github.com/simo97)
+[Adonis Simo (root)](https://github.com/simo97)
 
 ## Organization
 [Python Cameroon](https://github.com/python-cameroun)
