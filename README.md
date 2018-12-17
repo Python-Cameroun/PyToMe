@@ -27,7 +27,9 @@ PyToMe have a list of website where it wil fetch data(jobs/projects) and will no
 
 ## TODO
 - [OK] The Python Job with frequency
-- [ - ] Collecting/Fetching jobs all over website.
+- [OK]  Base engine for web scrappers 
+- [OK] Default webscrapper available ( githubjob and python.org job's scrapper )
+- [ - ] Add Flask support
 - [ - ] The Mailing system to notify all developpers subscribed on this app.
 - [OK] The Web page where to suscribe to PyToMe.
 - [OK] Saving Mails.
