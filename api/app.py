@@ -3,7 +3,7 @@
 # Author: [Sanix-darker](https://github.com/sanix-darker)
 #
 # Ressources / WebSites used to fetch data:
-# See WEBSITE_DATABASE 
+# See WEBSITE_DATABASE
 # on pending:
 # https://angel.co/europe/python/jobs~a
 # https://remoteml.com/tags/Python/~a
@@ -63,9 +63,9 @@ import time
 WEBSITE_DATABASE = "./data/website.ptm"
 
 def Presentation():
-    print "====PYTHON CAMEROUN===================================="
-    print "--------------------- PYTHOME v0.1 --------------------"
-    print "====================================By S@n1x-d4rk3r===="
+    print ("====PYTHON CAMEROUN====================================")
+    print ("--------------------- PYTHOME v0.1 --------------------")
+    print ("====================================By S@n1x-d4rk3r====")
 
 # This method take as parameter:
 # -the url, 
@@ -80,23 +80,23 @@ def fetch_fromIT(url, schema, total):
             result += link.get(schema.split(',')[1])
             print(link.get(schema.split(',')[1]))
         except:
-            print "Error on coercing to Unicode: need string or buffer, NoneType found"
+            print("Error on coercing to Unicode: need string or buffer, NoneType found")
     return result
 
 def getWebSite_and_schema_and_save_data():
     result = []
-    # Getting list of links and schemas 
+    # Getting list of links and schemas
     # and remove whitespace characters like `\n` at the end of each line
     lines = [line.rstrip('\n') for line in open(WEBSITE_DATABASE)]
     # Loop in lines, fetch and get result
     for x in lines:
-        print "Fetching on "+x.split('~')[0]
+        print ("Fetching on "+x.split('~')[0])
         result += fetch_fromIT(x.split('~')[0], x.split('~')[1], 15)
     return result;
 
 # The method JOB
 def PYTOME_job():
-    print "Starting the Job............."    
+    print ("Starting the Job.............")
     print getWebSite_and_schema_and_save_data()
 
 # Other Schedules Options
