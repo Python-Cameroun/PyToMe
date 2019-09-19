@@ -22,10 +22,10 @@ git clone https://github.com/Python-Cameroun/pytome
 cd to/the/project/
 
 # For Windows users, in the CLI hit this:
-start_PytoMe.bat
+pm.bat
 
 # For Windows users, in the CLI hit this:
-start_PytoMe.sh
+sh ./pm.sh
 
 #The script will do the rest for you!
 ```

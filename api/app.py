@@ -64,9 +64,7 @@ WEBSITE_DATABASE = "./data/website.ptm"
 
 def Presentation():
     print "====PYTHON CAMEROUN===================================="
-    print "-------------------------------------------------------"
     print "--------------------- PYTHOME v0.1 --------------------"
-    print "-------------------------------------------------------"
     print "====================================By S@n1x-d4rk3r===="
 
 # This method take as parameter:
