@@ -1,4 +1,4 @@
-<img src="assets/img/logo.jpg">
+<img src="src/assets/img/logo.jpg">
 
 # <>PyToMe
 
@@ -16,7 +16,7 @@ PyToMe have a list of website where it will fetch data(jobs/projects) and will n
 
 ## How to install it locally as a developper
 
-You just need to hit theese commands: 
+You just need to hit theese commands:
 ```shell
 git clone https://github.com/Python-Cameroun/pytome
 cd to/the/project/
@@ -43,7 +43,7 @@ Theese are few dependencies used in this project :
 ## TODO
 
 - [OK] The Python Job with frequency
-- [OK]  Base engine for web scrappers 
+- [OK]  Base engine for web scrappers
 - [OK] Default webscrapper available ( githubjob and python.org job's scrapper )
 - [ - ] Add Flask support
 - [ - ] The Mailing system to notify all developpers subscribed on this app.

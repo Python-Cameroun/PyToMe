@@ -1,7 +1,6 @@
-# i create this file because i wanted to separate the 
-# main workflow of the application and his differents modules
-from flask import Flask, request
-app = Flask(__name__)
+import os
+from flask import Flask, request, render_template
+from application import app
 
 @app.route('/')
 def start():
@@ -15,3 +14,4 @@ def start():
             return '{message: "Something went wrong with the file!"}'
     else:
         return '{message: "Error, Email not found!"}'
+    return render_template('index.html')
